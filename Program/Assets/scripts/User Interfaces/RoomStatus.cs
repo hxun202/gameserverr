@@ -2,6 +2,7 @@ using Photon.Realtime;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class RoomStatus : MonoBehaviourPunCallbacks
 {
@@ -11,11 +12,18 @@ public class RoomStatus : MonoBehaviourPunCallbacks
     [SerializeField] TextMeshProUGUI roomIndexText;
     [SerializeField] TextMeshProUGUI roomPersonnelText;
 
+    [SerializeField] Button button;
+
+    public void Start()
+    {
+        button.onClick.AddListener(() => PhotonNetwork.JoinRoom());
+    }
+
     public void Refresh(RoomInfo roomInfo, int index)
     {
         data.Name = roomInfo.Name;
         data.Index = index + 1;
-        data.PlayersCount = roomInfo.PlayerCount;
+        data.PlayerCount = roomInfo.PlayerCount;
         data.MaxPlayers = roomInfo.MaxPlayers;
 
         roomNameText.text = roomInfo.Name;

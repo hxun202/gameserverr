@@ -43,7 +43,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
                     dictionary.Add(roomList[i].Name, prefab);
                 }
 
-                prefab.GetComponent<RoomStatus>().Refresh(roomList[i]);
+                prefab.GetComponent<RoomStatus>().Refresh(roomList[i], i);
             }
         }
     }

@@ -8,7 +8,7 @@ public class Data : MonoBehaviour
 
     public string Name { get; set; }
 
-    public int PlayersCount { get; set; }
+    public int PlayerCount { get; set; }
 
     public int MaxPlayers { get; set; }
 }
