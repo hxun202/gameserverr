@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7924267986410229563}
   - component: {fileID: 4237195366141316624}
   m_Layer: 5
-  m_Name: RoomName
+  m_Name: Room Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,6 +410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d677054fb652c943bb38fcb3aee39be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomStatus
+  data: {fileID: 0}
+  roomNameText: {fileID: 4237195366141316624}
+  roomIndexText: {fileID: 295535776661068026}
+  roomPersonnelText: {fileID: 7009379768742259249}
+  button: {fileID: 638183342898120459}
 --- !u!1 &5342774017205945409
 GameObject:
   m_ObjectHideFlags: 0
